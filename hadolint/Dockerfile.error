@@ -1,0 +1,14 @@
+FROM bellsoft/liberica-runtime-container:jdk-17-stream-musl as builder
+WORKDIR /home/myapp
+ADD demo /home/myapp/demo
+RUN cd docker-image-demo && ./mvnw package
+FROM bellsoft/alpaquita-linux-base:latest
+RUN addgroup -S spring
+RUN adduser -S spring -G spring
+USER spring:spring
+VOLUME /tmp
+WORKDIR /home/myapp
+COPY --from=builder /home/myapp/demo/target .
+EXPOSE 8080
+CMD ["java", "-jar", "demo-0.0.1-SNAPSHOT.jar"]
+
