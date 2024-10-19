@@ -1,10 +1,11 @@
 FROM bellsoft/liberica-runtime-container:jdk-17-stream-musl as builder
 WORKDIR /home/myapp
-ADD demo /home/myapp/demo
-RUN cd docker-image-demo && ./mvnw package
-FROM bellsoft/alpaquita-linux-base:latest
-RUN addgroup -S spring
-RUN adduser -S spring -G spring
+COPY demo /home/myapp/demo
+# fix
+WORKDIR /home/myapp/demo/docker-image-demo
+RUN ./mvnw package
+FROM bellsoft/alpaquita-linux-base:stream-musl
+RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 VOLUME /tmp
 WORKDIR /home/myapp
