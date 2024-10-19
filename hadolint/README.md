@@ -29,7 +29,7 @@ $ docker run --rm -i hadolint/hadolint < hadolint/Dockerfile.error
 -:7 DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 ```
 
-Проверяем
+Проверяем версию с исправлениями
 
 ```
 $ docker run --rm -i hadolint/hadolint < hadolint/Dockerfile.fix
