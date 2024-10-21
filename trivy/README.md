@@ -4,6 +4,7 @@
     - [CVEs](#cves)
     - [Secrets](#secrets)
     - [Compliance](#compliance)
+    - [Allow rules](#allow-rules)
 
 # Trivy demo
 
@@ -103,4 +104,22 @@ Summary Report for compliance: CIS Docker Community Edition Benchmark v1.6.0
 │ 4.11 │  MEDIUM  │ Ensure only verified packages are installed (Manual)                    │   -    │   -    │
 │ 4.12 │  MEDIUM  │ Ensure all signed artifacts are validated (Manual)                      │   -    │   -    │
 └──────┴──────────┴─────────────────────────────────────────────────────────────────────────┴────────┴────────┘
+```
+
+### Allow rules
+
+```
+$ cat trivy/test.txt 
+```
+
+```
+$ trivy fs test.txt
+```
+
+```
+$ cp test.txt a.txt
+```
+
+```
+$ trivy fs a.txt
 ```
