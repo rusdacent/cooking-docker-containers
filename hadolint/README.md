@@ -2,7 +2,7 @@
 
 ## Install Hadolint
 
-https://github.com/hadolint/hadolint?tab=readme-ov-file#install
+https://github.com/hadolint/hadolint#install
 
 ## Example
 

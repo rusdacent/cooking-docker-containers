@@ -12,13 +12,13 @@ https://github.com/semgrep/semgrep#option-2-getting-started-from-the-cli
 Запустим проверку
 
 ```
-$ semgrep --config "p/dockerfile" Dockerfile
+$ semgrep --config "p/dockerfile" semgrep/Dockerfile
 ```
 
 или
 
 ```
-$ docker run --rm -v "${PWD}:/src" semgrep/semgrep semgrep --config "p/dockerfile" Dockerfile
+$ docker run --rm -v "${PWD}/semgrep:/src" semgrep/semgrep semgrep --config "p/dockerfile" Dockerfile
 ```
 
 Результаты

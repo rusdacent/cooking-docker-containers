@@ -12,12 +12,11 @@ https://github.com/bridgecrewio/checkov#installation
 Запустим проверку
 
 ```
-$ checkov -f Dockerfile --framework dockerfile
+$ checkov -f checkov/Dockerfile --framework dockerfile
 ```
 
 Результаты
 ```
-$ checkov -f Dockerfile --framework dockerfile
 [ dockerfile framework ]: 100%|████████████████████|[1/1], Current File Scanned=Dockerfile
 
        _               _              
