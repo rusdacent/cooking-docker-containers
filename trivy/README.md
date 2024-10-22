@@ -113,11 +113,11 @@ $ cat trivy/test.txt
 ```
 
 ```
-$ trivy fs test.txt
+$ trivy fs trivy/test.txt
 ```
 
 ```
-$ cp test.txt a.txt
+$ cp trivy/test.txt a.txt
 ```
 
 ```
