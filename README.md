@@ -19,4 +19,6 @@
 - [dockle](https://aquasecurity.github.io/trivy/v0.56/getting-started/installation/)
 - [trivy](https://github.com/semgrep/semgrep#option-2-getting-started-from-the-cli)
 
+# Презентация
 
+[Тыц](./present.pdf)
