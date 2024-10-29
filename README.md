@@ -13,11 +13,11 @@
 - [docker engine (for Linux)](https://docs.docker.com/desktop/install/linux/ubuntu/)
 - [Docker Desktop (for Mac OS/Windows)](https://docs.docker.com/desktop)
 - [hadolint](https://github.com/hadolint/hadolint#install)
-- [semgrep](https://github.com/wagoodman/dive?tab=readme-ov-file#installation)
+- [semgrep](https://github.com/semgrep/semgrep#option-2-getting-started-from-the-cli)
 - [checkov](https://github.com/bridgecrewio/checkov#installation)
-- [dive](https://github.com/goodwithtech/dockle#installation)
-- [dockle](https://aquasecurity.github.io/trivy/v0.56/getting-started/installation/)
-- [trivy](https://github.com/semgrep/semgrep#option-2-getting-started-from-the-cli)
+- [dive](https://github.com/wagoodman/dive?tab=readme-ov-file#installation)
+- [dockle](https://github.com/goodwithtech/dockle#installation)
+- [trivy](https://aquasecurity.github.io/trivy/v0.56/getting-started/installation/)
 
 # Презентация
 
