@@ -9,7 +9,7 @@ https://github.com/hadolint/hadolint#install
 Запустим проверку
 
 ```
-$ hadolint Dockerfile
+$ hadolint hadolint/Dockerfile.error
 ```
 
 или
